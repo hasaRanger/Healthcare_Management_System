@@ -52,8 +52,15 @@ public class StaffMember {
         this.staffID = staffID;
     }
 
-    public String toString(){
-        return "";
+    @Override
+    public String toString() {
+        return "StaffMember{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", dob=" + dob +
+                ", phoneNo='" + phoneNo + '\'' +
+                ", staffID='" + staffID + '\'' +
+                '}';
     }
 }
 
