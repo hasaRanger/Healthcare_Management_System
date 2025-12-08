@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class StaffMember {
+public abstract class StaffMember {
     protected String name;
     protected String surname;
     protected LocalDate dob;
