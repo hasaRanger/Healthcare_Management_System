@@ -7,9 +7,6 @@ public class Doctor extends StaffMember{
 
     public Doctor(String name, String sname){
         super(name, sname);
-        this.licenseNumber = licenseNumber;
-        this.specialization = specialization;
-        this.consultationsPerWeekCount = consultationsPerWeekCount;
     }
 
     public String getLicenseNumber() {
