@@ -1,15 +1,18 @@
 import java.time.LocalDate;
 
-public abstract class StaffMember {
+public abstract class StaffMember implements Comparable<StaffMember>{
     protected String name;
     protected String surname;
     protected LocalDate dob;
     protected String phoneNo;
     protected String staffID;
 
-    public StaffMember(String name, String surname){
+    public StaffMember(String name, String surname, LocalDate dob, String phoneNo, String staffID){
         this.name = name;
         this.surname = surname;
+        this.dob = dob;
+        this.phoneNo = phoneNo;
+        this.staffID = staffID;
     }
 
     public String getName(){
@@ -61,6 +64,10 @@ public abstract class StaffMember {
                 ", phoneNo='" + phoneNo + '\'' +
                 ", staffID='" + staffID + '\'' +
                 '}';
+    }
+
+    public int compareTo(StaffMember other){
+        return this.staffID.compareTo(other.staffID);
     }
 }
 

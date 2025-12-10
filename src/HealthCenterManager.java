@@ -1,9 +1,17 @@
 public interface HealthCenterManager {
-    boolean runMenu();
+    void runMenu();
 
-    void addStaffMemberList();
+    void addStaffMember();
+
+    void addStaffMemberList(StaffMember staff);
+
+//    void printStaffList();
 
     void printStaffMember();
+
+    void editStaffMember();
+
+    void deleteStaffMember();
 
     void runGUI();
 }

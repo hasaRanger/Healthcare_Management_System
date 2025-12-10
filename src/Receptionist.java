@@ -1,9 +1,11 @@
+import java.time.LocalDate;
+
 public class Receptionist extends StaffMember{
     private int deskNumber;
     private int hoursPerWeek;
 
-    public Receptionist(String name, String surname){
-        super(name, surname);
+    public Receptionist(String name, String surname, LocalDate dob, String phoneNo, String staffID){
+        super(name, surname, dob, phoneNo, staffID);
     }
      public int getDeskNumber(){
         return deskNumber;

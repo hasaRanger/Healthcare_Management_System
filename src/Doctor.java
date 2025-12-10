@@ -5,8 +5,8 @@ public class Doctor extends StaffMember{
     private String specialization;
     private int consultationsPerWeekCount;
 
-    public Doctor(String name, String sname){
-        super(name, sname);
+    public Doctor(String name, String sname, LocalDate dob, String phoneNo, String staffID){
+        super(name, sname, dob, phoneNo, staffID);
     }
 
     public String getLicenseNumber() {
